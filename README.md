@@ -26,6 +26,22 @@ and division for large integers (64 bits and above).
 - Cargo (Rust package manager)
 - AVX512 compatible hardware (for optimized performance)
 
+Here’s a brief overview of the project structure:
+
+    src/: Contains the source code for the library.
+        lib.rs: The main entry point that exposes the public API.
+        integer_ops.rs: Implements SIMD-based addition and Karatsuba multiplication.
+        polynomial.rs: Handles polynomial precomputation.
+        keyswitch.rs: Contains parallel keyswitching operations.
+
+    benches/: Contains benchmarking code to evaluate performance improvements.
+
+    tests/: Contains unit tests for validating the functionality of different components.
+
+    Cargo.toml: The configuration file for Rust's package manager and build system.
+
+    README.md: Provides an overview of the project, setup instructions, and usage guidelines.
+
 Usage
 Import the library in your Rust project:
 
