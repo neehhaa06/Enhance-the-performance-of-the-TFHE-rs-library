@@ -10,21 +10,26 @@ and division for large integers (64 bits and above).
 
 - Optimize cryptographic primitives for improved efficiency.
 - Enhance integer operations using advanced algorithms.
-- Maintain high security standards (at least 128 bits) and low error probabilities (≤ 2^(-40)).
+- Maintain high-security standards (at least 128 bits) and low error probabilities (≤ 2^(-40)).
 - Provide clear documentation and benchmarking for performance evaluation.
 
 ## Features
 
-- **Efficient Programmable Bootstrapping**: Improved performance through parallel processing and SIMD instructions.
-- **Optimized Key Switching**: Enhanced key switching operations leveraging AVX512.
-- **Fast Integer Operations**: Implementation of Karatsuba multiplication and Newton-Raphson division algorithms.
-- **Comprehensive Benchmarking**: Tools to measure accuracy and performance on AWS m6i.metal instances.
+- Efficient Programmable Bootstrapping: Improved performance through parallel processing and SIMD instructions.
+- Optimized Key Switching: Enhanced key switching operations leveraging AVX512.
+- Fast Integer Operations: Implementation of Karatsuba multiplication and Newton-Raphson division algorithms.
+- Comprehensive Benchmarking: Tools to measure accuracy and performance on AWS m6i.metal instances.
 
 ## Requirements
 
 - Rust (version 1.56 or later)
 - Cargo (Rust package manager)
 - AVX512 compatible hardware (for optimized performance)
+
+Usage
+Import the library in your Rust project:
+
+use tfhe_rs_optimization::{simd_add, karatsuba, precompute_polynomials, parallel_k
 
 ## Installation
 
